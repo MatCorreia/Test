@@ -1,0 +1,1145 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap');
+
+//* Global *//
+* {
+    padding: 0;
+    margin: 0;
+}
+
+//* Colors *//
+$white: #fff;
+$black: #000;
+$age: #D5A368;
+$original: #F9EFE4;
+$classic: #472138;
+$borderEvent: #d4d4d4;
+
+//* Layout *//
+body {
+    font-family: 'Raleway', serif;
+    letter-spacing: 0.1em;
+}
+
+.row {
+    margin: 0;
+}
+
+//* Menu *//
+nav a {
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $black;
+    &:hover {
+        color: $age;
+    }
+}
+
+.l-style-none {
+    list-style: none;
+}
+
+//* Main *//
+.carousel-control-prev {
+    left: 0px;
+}
+
+.rotation {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 275px;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.engagement {
+    position: absolute;
+    bottom: 25px;
+    left: 50px;
+    color: $white;
+    & h1 {
+        font-size: 4em;
+        font-weight: 600;
+    }
+}
+
+//* Section Design *//
+.section-design {
+    background-color: $original;
+    display: flex;
+    & h2 {
+        font-size: 5em;
+        font-weight: 800;
+        line-height: 1.2em;
+    }
+    & p {
+        font-size: 1em;
+        width: 500px;
+    }
+}
+
+//* Section Jewelry *//
+.section-jewelry {
+    padding: 120px 0;
+    & span {
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+    & h3 {
+        font-size: 4em;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        color: $age;
+    }
+}
+
+//* Section Bridal *//
+.section-bridal {
+    background-color: $classic;
+    display: flex;
+    color: $white;
+    height: 800px;
+    & h3 {
+        font-size: 4em;
+        font-weight: 800;
+        color: $age;
+    }
+    & p {
+        width: 500px;
+        opacity: 0.7;
+    }
+}
+
+.pd-bridal {
+    padding: 0 150px;
+}
+
+.image {
+    height: 800px;
+    width: 100%;
+    display: block;
+}
+
+//* Section Category *//
+.section-rings {
+    text-align: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    & span {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+    }
+    & h2 {
+        font-size: 6em;
+        font-weight: 800;
+        letter-spacing: 0.2em;
+    }
+}
+
+.bg-ring1 {
+    background-image: url(../images/banner2/image4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-ring2 {
+    background: url(../images/banner2/image2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-ring3 {
+    background: url(../images/banner2/image3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+//* Section Shop *//
+.card-shop {
+    text-align: center;
+    padding: 50px 0;
+    & h2 {
+        font-size: 4em;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        color: $classic;
+    }
+    & p {
+        text-transform: uppercase;
+    }
+}
+
+.bg-shop1 {
+    background: url(../images/slider-aneis1.jpg);
+}
+
+.bg-shop2 {
+    background: url(../images/slider-aneis2.jpg);
+}
+
+.bg-shop3 {
+    background: url(../images/slider-aneis3.jpg);
+}
+
+.bg-shop4 {
+    background: url(../images/slider-aneis4.jpg);
+}
+
+.owl-card {
+    background-size: cover;
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.center-card .owl-item {
+    opacity: 0.5;
+    &.center {
+        opacity: 1;
+        & .owl-card {
+            width: 425px;
+            height: 425px
+        }
+    }
+}
+
+//* Section Collections *//
+.bg-collections {
+    background-color: $age;
+    padding: 100px 50px;
+    & h2 {
+        font-size: 4.5em;
+        font-weight: 800;
+        line-height: 3em;
+        z-index: 9999999;
+    }
+    & a {
+        font-size: 1.5em;
+        color: $black;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        line-height: 3em;
+    }
+}
+
+.front {
+    z-index: 9999999;
+}
+
+.owl-collection {
+    top: 25px;
+    width: 350px;
+    height: 350px;
+    z-index: 0;
+    & img {
+        width: 650px;
+        height: 650px;
+    }
+    & .owl-nav.disabled {
+        display: none !important;
+    }
+}
+
+.view {
+    position: relative;
+    bottom: 75px;
+    left: 25px;
+}
+
+//* Section About *//
+.bg-about {
+    margin: 200px 0 100px 0;
+}
+
+.about-us {
+    text-align: center;
+    & h3,
+    span {
+        font-size: 4em;
+        font-weight: 800;
+        color: $age;
+        letter-spacing: 0.1em;
+        line-height: 1em;
+    }
+    & p {
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+}
+
+.tradition .owl-nav.disabled {
+    display: none !important
+}
+
+.tradition .owl-item.active.center {
+    position: relative;
+    padding-top: 80px;
+}
+
+.owl-carousel.tradition .owl-stage-outer {
+    height: 900px;
+    overflow-x: hidden
+}
+
+.owl-item {
+    padding: 0;
+}
+
+.card-tradition {
+    display: flex;
+}
+
+.card-bottom {
+    position: absolute;
+    background-color: $white;
+    width: 85%;
+    padding: 20px;
+    bottom: -80px;
+    right: 0;
+    & h3 {
+        font-size: 3em;
+        font-weight: 800;
+        width: 350px;
+    }
+    & p {
+        font-weight: normal;
+        color: $age;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
+
+//* Section Events *//
+.events {
+    & h2 {
+        font-size: 2.8em;
+        font-weight: 800;
+        color: $age;
+        line-height: 0.5;
+    }
+    & p {
+        text-transform: uppercase;
+    }
+}
+
+.events-date {
+    & li {
+        padding: 25px 0;
+    }
+
+    & h3 {
+        font-size: 2em;
+        font-weight: 800;
+        color: $age;
+        line-height: 0.5;
+    }
+    & p {
+        text-transform: uppercase;
+    }
+}
+
+.date-address1 {
+    border-top: 1px solid $borderEvent;
+    & h4 {
+        font-weight: 800;
+    }
+    & p {
+        text-transform: none;
+    }
+}
+
+.date-address2 {
+    border-top: 1px solid $borderEvent;
+    border-bottom: 1px solid $borderEvent;
+    & h4 {
+        font-weight: 800;
+    }
+    & p {
+        text-transform: none;
+    }
+}   
+
+.date-address3 {
+    border-bottom: 1px solid $borderEvent;
+    & h4 {
+        font-weight: 800;
+    }
+    & p {
+        text-transform: none;
+    }
+}
+
+//* Section Instagram *//
+.instagram {
+    text-align: center;
+    & h2 {
+        font-size: 4em;
+        font-weight: 800;
+        color: $classic;
+        letter-spacing: 0.1em;
+    }
+    & p {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+}
+
+.card-instagram1 {
+    background: url(../images/instagram/image1.jpg);
+}
+
+.card-instagram2 {
+    background: url(../images/instagram/image2.jpg);
+}
+
+.card-instagram3 {
+    background: url(../images/instagram/image3.jpg);
+}
+
+.card-instagram4 {
+    background: url(../images/instagram/image4.jpg);
+}
+
+.card-instagram5 {
+    background: url(../images/instagram/image5.jpg);
+}
+
+.cards-insta {
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.insta-carousel .owl-item.center {
+    overflow: hidden;
+    padding: 0px;
+    border: 10px solid $white;
+    height: 360px;
+    box-shadow: 0px 10px 15px -5px $black;
+}
+
+.insta-carousel .owl-item.center .cards-insta {
+    width: 400px;
+    height: 400px
+}
+
+.insta-carousel .owl-item {
+    opacity: 1
+}
+
+.owl-carousel.insta-carousel .owl-stage-outer {
+    height: 405px;
+    overflow-x: hidden;
+}
+
+//* Section Find *//
+.bg-find {
+    min-height: 650px;
+    background-image: url(../images/image10.jpg);
+    background-size: cover;
+}
+
+.opacity {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.find {
+    display: flex;
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    & h3 {
+        font-size: 4em;
+        font-weight: 800;
+        color: $white;
+        letter-spacing: 0.1em;
+    }
+    & p {
+        text-transform: uppercase;
+        color: $age;
+        margin: 0;
+    }
+}
+
+//* Footer Contact*//
+.footer-items {
+    display: flex;
+    font-size: 0.75em;
+    font-weight: 600;
+    margin: auto;
+    & ul {
+        flex-direction: row;
+        text-transform: uppercase;
+        & li {
+            padding: 30px 40px 10px 0;
+            & a {
+                color: $white;
+                &:hover {
+                    color: $age;
+                }
+            }
+        }
+    }
+}
+
+.footer-contact {
+    display: flex;
+    & ul {
+        margin-bottom: 10px;
+        & li {
+            padding: 30px 0 10px 0;  
+            & button {
+                background-color: transparent;
+                color: $white;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 0;
+                width: 275px;
+                padding: 8px 0;
+                text-transform: uppercase;
+            }   
+        }
+    }
+}
+
+.form-group {
+    & h5 {
+        color: $age;
+        font-weight: 800;
+        margin-bottom: 25px;
+    }
+}
+
+.outline {
+    border: 1px solid $age;
+    & .form-control {
+        border: none;
+        &::placeholder {
+            color: $white;
+        }
+        &:focus {
+            border: none;
+            box-shadow: none;
+        }
+    }
+    & input {
+        background: transparent;
+        padding-right: 60px;
+        height: 45px;
+        &:focus {
+            background: transparent;
+            border: 1px solid $age;
+            color: $white;
+        }
+    }
+}
+
+.input-group-append {
+    & button.btn.btn-warning {
+        background-color: $age;
+        margin: 5px 5px 5px 0;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        border: none;
+        &:focus {
+            background-color: $white;
+        }
+    }   
+}
+
+.privacy {
+    width: 100%;
+    & ul {
+        flex-direction: row;
+        justify-content: center;
+        & li {
+            padding: 10px 25px 0 25px;
+            & a {
+                font-size: 0.8em;
+                color: $white;
+                opacity: 0.5;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.support {
+    display: flex;
+    color: $white;
+    & h5 {
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    & ul li {
+        margin: auto;
+    }
+}
+
+.bg-footer-bottom {
+    background-color: #3C3C3C;
+    font-size: 0.8em;
+    color: $white;
+    padding: 15px 0;
+    & span {
+        text-transform: uppercase;
+    }
+}
+
+//* Carousel *//
+.owl-nav {
+    display: block !important;
+    position: absolute;
+    top: 40%;
+    width: 100%
+}
+
+button.owl-prev {
+    position: absolute;
+    left: 80px
+}
+
+button.owl-next {
+    position: absolute;
+    right: 80px
+}
+
+button.owl-prev,
+button.owl-next {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $white !important;
+    border: 1px solid $white !important;
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.4) !important;
+}
+
+button.owl-next:hover {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
+    background-color: $age !important;
+    border: 1px solid $white !important;
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.3) !important;
+}
+
+button.owl-prev:hover {
+    background-color: $age !important
+}
+
+button.owl-next:hover span {
+    color: $white !important
+}
+
+button.owl-prev:hover span {
+    color: $white !important
+}
+
+button.owl-prev span,
+button.owl-next span {
+    font-size: 2.2em;
+    color: $black;
+    line-height: 28px
+}
+
+//* IPAD *//
+@media (max-width: 1024px) {
+    //* Main *//
+    .rotation {
+        top: 250px;
+    }
+
+    //* Main *//
+    .engagement {
+        position: absolute;
+        bottom: 20px;
+        left: 25px;
+        & h1 {
+            font-size: 3em;
+        }
+    }
+
+    //* Section Design *//
+    .section-design {
+        & h2 {
+            font-size: 3.5em;
+            width: 325px;
+        }
+        & p {
+            width: 325px;
+        }
+    }
+    //* Section Bridal *//
+    .section-bridal {
+        height: 500px;
+        & h3 {
+            font-size: 3.25em;
+        }
+        & p {
+            width: 300px;
+        }
+    }
+    
+    .pd-bridal {
+        padding: 0 70px;
+    }
+    
+    .image {
+        height: 500px;
+    }
+
+    //* Section Category *//
+    .section-rings {
+        height: 400px;
+        & span {
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+        & h2 {
+            font-size: 4em;
+            font-weight: 800;
+        }
+    }
+  
+    .category .owl-nav.disabled {
+        display: none !important
+    }
+
+    //* Section Shop *//
+    .owl-card {
+        background-size: cover;
+        display: flex;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .center-card .owl-item {
+        opacity: 0.5;
+        &.center {
+            opacity: 1;
+            & .owl-card {
+                width: 300px;
+                height: 300px
+            }
+        }
+    }
+
+    //* Section Collections *//
+    .bg-collections {
+        background-color: $age;
+        padding: 80px 50px;
+        & h2 {
+            font-size: 4em;
+            font-weight: 800;
+            line-height: 2em;
+        }
+        & a {
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+    }
+
+    .owl-collection {
+        top: 80px;
+        & img {
+            height: 350px;
+        }
+    }
+
+    .view {
+        position: relative;
+        bottom: 75px;
+        left: 25px;
+    }
+
+
+    //* Section About *//
+    .bg-about {
+        margin: 100px 0 35px 0;
+    }
+
+    .about-us {
+        & h3,
+        span {
+            font-size: 3em;
+        }
+    }
+
+    .card-bottom {
+        width: 100%;
+        & h3 {
+            font-size: 1.5em;
+            width: 200px;
+        }
+    }
+
+    .owl-carousel.tradition .owl-stage-outer {
+        height: 500px;
+        overflow-x: hidden
+    }
+
+    //* Section Events *//
+    .events-date {  
+        & h3 {
+            float: right;
+        }
+        & p {
+            float: left;
+        }
+    }
+
+    //* Section Instagram *//
+    .instagram {
+        & h2 {
+            font-size: 3.5em;
+        }
+        & p {
+            font-size: 1.25em;
+        }
+    }
+
+    .cards-insta {
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .insta-carousel .owl-item.center {
+        padding: 0px;
+        border: 10px solid $white;
+        width: 350px;
+        height: 350px;
+        box-shadow: 0px 10px 15px -5px $black;
+    }
+
+    .insta-carousel .owl-item.center .cards-insta {
+        width: 400px;
+        height: 400px
+    }
+
+    .insta-carousel .owl-item {
+        opacity: 1
+    }
+
+    .owl-carousel.insta-carousel .owl-stage-outer {
+        height: 405px;
+        overflow-x: hidden;
+    }
+}
+
+//* Mobile Home *//
+@media (max-width: 480px) {
+    //* Main *//
+    .carousel-indicators {
+        flex-direction: row;
+    }
+    
+    .engagement {
+        position: absolute;
+        bottom: 15px;
+        left: 25px;
+        & h1 {
+            font-size: 1.5em;
+        }
+    }
+    
+    //* Section Design *//
+    .section-design {
+        padding: 50px;
+        & h2 {
+            font-size: 2.5em;
+            width: 250px;
+            line-height: 1em;
+        }
+        & p {
+            width: 250px;
+        }
+    }
+
+    //* Section Bridal *//
+    .section-bridal {
+        height: 500px;
+        & h3 {
+            font-size: 3.25em;
+        }
+        & p {
+            width: 300px;
+        }
+    }
+    
+    .pd-bridal {
+        padding: 0 70px;
+    }
+    
+    .image {
+        height: 400px;
+    }
+
+    //* Section Jewelry *//
+    .section-jewelry {
+        padding: 60px 0;
+        & span {
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+        }
+        & h3 {
+            font-size: 2.8em;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: $age;
+        }
+    }
+
+    //* Section Bridal *//
+    .section-bridal {
+        height: 520px;
+        & h3 {
+            font-size: 3em;
+        }
+        & p {
+            width: 220px;
+        }
+    } 
+
+    //* Section Category *//
+    .section-rings {
+        height: 300px;
+        & span {
+            font-size: 1em;
+        }
+        & h2 {
+            font-size: 3em;
+        }
+    }
+
+    //* Section Shop *//
+    .card-shop {
+        padding: 25px;
+        & h2 {
+            font-size: 3em;
+            letter-spacing: 0em;
+            line-height: 1em;
+        }
+    }
+
+    .owl-card {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .center-card .owl-item {
+        opacity: 0.5;
+        &.center {
+            opacity: 1;
+            & .owl-card {
+                width: 175px;
+                height: 175px
+            }
+        }
+    } 
+    
+    .center-card {
+        & .owl-nav {
+            display: none !important;
+        }
+    }
+    
+    //* Section Collections *//
+    .bg-collections {
+        background-color: $age;
+        padding: 15px;
+        & h2 {
+            font-size: 2.5em;
+            font-weight: 800;
+            line-height: 2em;
+        }
+        & a {
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+    }
+
+    .owl-collection {
+        top: 0px;
+        width: 150px;
+        height: 150px;
+        & img {
+            width: 200px;
+            height: 200px;
+        }
+        & .owl-nav {
+            display: none !important;
+        }
+    }
+
+    .view {
+        bottom: 60px;
+        left: 15px;
+    }
+
+    //* Section About *//
+    .bg-about {
+        margin: 100px 0 35px 0;
+    }
+
+    .about-us {
+        & h3,
+        span {
+            font-size: 2.5em;
+        }
+    }
+
+    .card-bottom {
+        width: 100%;
+        & h3 {
+            font-size: 1.5em;
+            width: 200px;
+        }
+    }
+
+    .owl-carousel.tradition .owl-stage-outer {
+        height: 500px;
+        overflow-x: hidden
+    }
+
+    //* Section Events *//
+    .events {
+        text-align: center;
+        margin-bottom: 25px;
+        & h2 {
+            font-size: 2.8em;
+            font-weight: 800;
+            color: $age;
+            line-height: 0.5;
+        }
+        & p {
+            text-transform: uppercase;
+        }
+    }
+
+    //* Section Instagram *//
+    .instagram {
+        & h2 {
+            font-size: 2.5em;
+        }
+        & p {
+            font-size: 1.25em;
+        }
+    }
+
+    .cards-insta {
+        background-size: cover;
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    .insta-carousel {
+        & .owl-nav {
+            display: none !important;
+        }
+    }
+
+    .insta-carousel .owl-item.center {
+        padding: 0px;
+        border: 10px solid $white;
+        width: 300px;
+        height: 300px;
+        box-shadow: 0px 10px 15px -5px $black;
+    }
+
+    .insta-carousel .owl-item.center .cards-insta {
+        width: 350px;
+        height: 350px
+    }
+
+    .insta-carousel .owl-item {
+        opacity: 1
+    }
+
+    .owl-carousel.insta-carousel .owl-stage-outer {
+        height: 405px;
+        overflow-x: hidden;
+    }
+
+    //* Section Find *//
+    .bg-find {
+        min-height: 400px;
+    }
+
+    .find {
+        height: 400px;
+        & h3 {
+            font-size: 2.5em;
+            font-weight: 800;
+            color: $white;
+            letter-spacing: 0.1em;
+        }
+        & p {
+            text-transform: uppercase;
+            color: $age;
+            margin: 0;
+        }
+    }
+
+    //* Footer Contact*//
+    .footer-items {
+        display: flex;
+        font-size: 0.75em;
+        font-weight: 600;
+        margin: auto;
+        & ul {
+            flex-direction: row;
+            text-transform: uppercase;
+            & li {
+                padding: 30px 40px 10px 0;
+                & a {
+                    color: $white;
+                    &:hover {
+                        color: $age;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-contact {
+        display: flex;
+        & ul {
+            margin-bottom: 10px;
+            & li {
+                padding: 20px 0 10px 0; 
+                margin: auto;
+                & button {
+                    margin-top: -30px;
+                }   
+            }
+        }
+    }
+
+    .privacy {
+        & ul {
+            flex-direction: column;
+        }
+    }
+
+    .bg-footer-bottom {
+        text-align: center;
+    }
+}
+
